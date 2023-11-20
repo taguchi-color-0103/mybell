@@ -1,0 +1,16 @@
+<!-- index.html -->
+<html>
+<head>
+  <!-- manifest.jsonを呼び出す -->
+  <script>
+    // service workerが有効なら、servise-worker.js を登録する
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Refistered'); });
+    }
+  </script>
+  <title>github pages test</title>
+</head>
+<body>
+  <h1>github pages test</h1>
+</body>
+</html>
